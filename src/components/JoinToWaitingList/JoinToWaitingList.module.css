@@ -1,0 +1,72 @@
+.wrapper {
+  background: url(../../images/pattern.png) var(--Base-950);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 128px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 484px;
+}
+.img {
+  max-width: 320px;
+  width: 100%;
+}
+.bottomIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 20vw;
+  z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    padding: 96px 0;
+    padding-bottom: 0;
+  }
+  .container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .infoContainer,
+  .imgContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+  .img {
+    max-width: 280px;
+  }
+
+  .bottomIcon {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 80px 0;
+    padding-bottom: 0;
+  }
+  .img {
+    max-width: 240px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,70 @@
+.btn.sm {
+  height: 36px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 44px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn.md {
+  height: auto;
+  padding: 12px 20px;
+  border-radius: 44px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn.lg {
+  height: 48px;
+  padding: 6px 12px;
+  border-radius: 44px;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: transparent;
+
+  border: 0px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 44px;
+  box-shadow: 0px 1px 2px 0px rgba(3, 7, 18, 0.05);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn.btnPrimary {
+  color: var(--Base-0);
+
+  background: var(--Primary-Default);
+}
+
+.btnGreen {
+  color: var(--Base-0);
+  background: var(--Background-Green);
+}
+.wFull {
+  width: 100%;
+}
+.btn.btnTransparent {
+  color: var(--Primary-Default);
+  background: transparent;
+  box-shadow: none;
+}
+
+.mlAuto {
+  margin-left: auto;
+}
+@media only screen and (max-width: 991px) {
+  .btn.md {
+    font-size: 14px;
+    padding: 11px 18px;
+  }
+}

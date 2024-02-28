@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+}
+:root {
+  --Base-0: #ffffff;
+  --Base-50: #f8f8f8;
+  --Base-100: #f2f2f2;
+
+  --Base-900: #171717;
+  --Base-950: #0f0f0f;
+  --Base-800: #242424;
+  --Base-400: #9c9c9c;
+  --Base-500: #6b6b6b;
+  --Base-600: #4b5563;
+  --Primary-Default: #01c144;
+}
+body {
+  padding: 0;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 1199px;
+  width: 90%;
+  margin: 0 auto;
+}
+.paddingTop {
+  padding-top: 140px;
+}
+@media only screen and (max-width: 991px) {
+  .paddingTop {
+    padding-top: 110px;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Firefox */
+.overflow {
+  scrollbar-width: thin;
+  scrollbar-color: var(--Primary-Default) rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+/* Chrome, Edge, and Safari */
+.overflow::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.overflow::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background: var(--Primary-Default);
+  border-radius: 100vh;
+  border: none;
+  border-radius: 5px;
+}

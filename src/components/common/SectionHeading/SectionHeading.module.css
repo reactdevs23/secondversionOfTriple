@@ -1,0 +1,50 @@
+.heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+}
+.xl5 {
+  font-size: 48px;
+}
+.base0 {
+  color: var(--Base-0);
+}
+.base800 {
+  color: var(--Base-800);
+}
+.base950 {
+  color: var(--Base-950);
+}
+
+.textCenter {
+  text-align: center;
+}
+@media only screen and (max-width: 1199px) {
+  .heading {
+    font-size: 50px;
+  }
+  .xl5 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mobileCenter {
+    text-align: center;
+  }
+  .heading {
+    font-size: 60px;
+  }
+  .xl5 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading {
+    font-size: 36px;
+  }
+  .xl5 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,122 @@
+.text {
+  color: var(--Base-0);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%;
+}
+.primaryDefault {
+  color: var(--Primary-Default);
+}
+
+.base0 {
+  color: var(--Base-0);
+}
+.base500 {
+  color: var(--Base-500);
+}
+.base600 {
+  color: var(--Base-600);
+}
+.base800 {
+  color: var(--Base-800);
+}
+.base900 {
+  color: var(--Base-900);
+}
+.base950 {
+  color: var(--Base-950);
+}
+.textLeft {
+  text-align: left;
+}
+.warning {
+  color: var(--Warning-Default);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.mlAuto {
+  margin-left: auto;
+}
+
+.xs {
+  font-size: 12px;
+}
+.sm {
+  font-size: 14px;
+}
+.md {
+  font-size: 16px;
+}
+.lg {
+  font-size: 18px;
+}
+.xl {
+  font-size: 20px;
+}
+.xl2 {
+  font-size: 24px;
+}
+.xl3 {
+  font-size: 30px;
+  line-height: 120%;
+}
+.xl4 {
+  font-size: 36px;
+  line-height: 120%;
+}
+.xl5 {
+  font-size: 48px;
+  line-height: 115%;
+}
+.bold {
+  font-weight: 700;
+}
+.semiBold {
+  font-weight: 500;
+}
+.wFull {
+  width: 100%;
+}
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+.upperCase {
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1199px) {
+  .xl5 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mobileCenter {
+    text-align: center;
+  }
+  .xl5 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .lg {
+    font-size: 16px;
+  }
+  .xl {
+    font-size: 18px;
+  }
+  .xl5 {
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .xl4,
+  .xl3 {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}

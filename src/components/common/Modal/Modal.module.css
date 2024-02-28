@@ -1,0 +1,97 @@
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 6;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+  cursor: pointer;
+}
+.lightTheme {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+  z-index: 6;
+  max-width: 95%;
+
+  /* my */
+  margin: 0 auto;
+  max-height: 680px;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: var(--Base-50);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  color: var(--Base-500);
+  font-size: 24px;
+}
+.xShort {
+  max-width: 452px;
+  width: calc(100% - 40px);
+}
+
+.modal.styled {
+  padding: 28px;
+  background-color: var(--Base-0);
+
+  box-shadow: 0px 40px 64px -16px (--Base-100);
+  border-radius: 32px;
+}
+
+.modalOverlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.active {
+  pointer-events: all;
+  opacity: 1;
+}
+@media only screen and (max-width: 991px) {
+  .modal {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .modal.styled {
+    padding: 20px;
+    border-radius: 18px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .modal {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+  .close {
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .icon {
+    font-size: 16px;
+  }
+}

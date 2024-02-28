@@ -1,0 +1,104 @@
+.wrapper {
+  background: var(--Base-0);
+  padding: 128px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+
+  background: url(../../images/integrationBg.png) var(--Base-50);
+
+  background-position: center;
+
+  border-radius: 24px;
+}
+.heading {
+  padding: 44px 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px;
+  border-radius: 24px;
+  background: var(--Base-0);
+  height: 100%;
+}
+.icon {
+  min-width: 60px;
+  max-width: 60px;
+  width: 100%;
+}
+.info {
+  word-break: break-all;
+}
+@media only screen and (max-width: 1280px) {
+  .card {
+    padding: 24px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 18px;
+  }
+  .icon {
+    max-width: 50px;
+    min-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    padding: 96px 0;
+  }
+  .heading {
+    padding-bottom: 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 80px 0;
+  }
+  .container {
+    padding: 10px;
+  }
+  .icon {
+    max-width: 40px;
+    min-width: 40px;
+    margin-top: 3px;
+  }
+  .card {
+    gap: 12px;
+    padding: 18px;
+    border-radius: 18px;
+  }
+  .img {
+    border-radius: 18px;
+  }
+  .container {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 350px) {
+}
