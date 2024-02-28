@@ -144,11 +144,11 @@
 }
 @media only screen and (max-width: 520px) {
   .header {
-    width: calc(100% - 24px);
+    width: calc(100% - 40px);
   }
   .navItems {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .logo {
     max-width: 100px;
