@@ -11,7 +11,8 @@ import { useMyContext } from "../../Context/Context";
 import clsx from "clsx";
 
 const Navbar = () => {
-  const { setIsJoinWaitingListModalActive } = useMyContext();
+  const { setIsJoinWaitingListModalActive, setIsWhiteListModalActive } =
+    useMyContext();
   const dropDownRef = useRef(null);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
 
@@ -121,14 +122,24 @@ const Navbar = () => {
           >
             Help
           </NavLink>{" "}
-          <Button
-            btnPrimary
-            size="md"
-            onClick={() => setIsJoinWaitingListModalActive(true)}
-            className={classes.mobileButton}
-          >
-            Join Waiting List
-          </Button>
+          <div className={classes.buttonContainer}>
+            <Button
+              btnPrimary
+              size="md"
+              onClick={() => setIsJoinWaitingListModalActive(true)}
+              className={classes.mobileButton}
+            >
+              Join Waiting List
+            </Button>{" "}
+            <Button
+              btnPrimary
+              size="md"
+              onClick={() => setIsWhiteListModalActive(true)}
+              className={classes.mobileButton}
+            >
+              WhiteList
+            </Button>
+          </div>
         </div>
         <div className={classes.buttonContainer}>
           <Button
@@ -138,6 +149,14 @@ const Navbar = () => {
             className={classes.button}
           >
             Join Waiting List
+          </Button>{" "}
+          <Button
+            btnPrimary
+            size="md"
+            onClick={() => setIsWhiteListModalActive(true)}
+            className={classes.button}
+          >
+            WhiteList
           </Button>
           {sidebar ? (
             <div className={classes.iconContainer}>

@@ -1,0 +1,129 @@
+.mainWrapper {
+  max-width: 790px;
+  width: 95%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.formContainer .info {
+  max-width: 348px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  color: var(--Base-800);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155.556%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--Base-50);
+  padding: 10px 15px;
+}
+.formContainer .button {
+  width: 100%;
+  border-radius: 10px;
+}
+.referContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.referHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.referTitle {
+  font-weight: 600;
+}
+.earnedPoint {
+  margin-left: auto;
+}
+.earnedPoint span {
+  font-weight: 600;
+}
+.referList {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  border: 1px solid var(--Base-100);
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.referList > * {
+  border-bottom: 1px solid var(--Base-100);
+  padding: 10px 15px;
+}
+
+.referList > *:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+.id {
+  min-width: 30px;
+}
+.status {
+  display: flex;
+  justify-content: flex-end;
+}
+.joined {
+  border-radius: 4px;
+  background: rgba(1, 193, 68, 0.1);
+  color: var(--Primary-Default);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  padding: 2px 8px;
+}
+
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 991px) {
+  .mainWrapper {
+    max-width: 650px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .wrapper,
+  .formContainer {
+    gap: 20px;
+  }
+  .formContainer .info {
+    max-width: 348px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .input {
+    font-size: 16px;
+  }
+  .referList {
+    max-height: 300px;
+  }
+}

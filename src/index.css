@@ -85,7 +85,7 @@ input[type="number"] {
 
 /* Chrome, Edge, and Safari */
 .overflow::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
   border-radius: 5px;
 }
 
