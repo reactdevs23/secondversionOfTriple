@@ -18,6 +18,9 @@
 .base600 {
   color: var(--Base-600);
 }
+.base700 {
+  color: var(--Base-700);
+}
 .base800 {
   color: var(--Base-800);
 }

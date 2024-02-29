@@ -75,7 +75,7 @@ const WhiteListModal = ({ isActive, onClose }) => {
               <Text md semiBold base900 className={classes.referTitle}>
                 Your Refer (147)
               </Text>
-              <Text md semiBold base900 className={classes.earnedPoint}>
+              <Text sm semiBold base700 className={classes.earnedPoint}>
                 Earned Point: <span>1345</span>
               </Text>
             </div>

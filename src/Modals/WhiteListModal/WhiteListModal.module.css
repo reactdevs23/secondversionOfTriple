@@ -55,11 +55,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.referTitle {
+.referHeader .referTitle {
   font-weight: 600;
 }
-.earnedPoint {
+.referHeader .earnedPoint {
   margin-left: auto;
+  color: var(--Base-900);
 }
 .earnedPoint span {
   font-weight: 600;
@@ -125,5 +126,13 @@
   }
   .referList {
     max-height: 300px;
+  }
+  .referList > * {
+    border-bottom: 1px solid var(--Base-100);
+    padding: 8px 10px;
+  }
+  .referHeader .referTitle,
+  .referHeader .earnedPoint {
+    font-size: 12px;
   }
 }
